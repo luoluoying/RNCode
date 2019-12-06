@@ -1,0 +1,16 @@
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: [
+      ["import", { "libraryName": "antd-mobile-rn" }]
+    ]
+    // env: {
+    //   "development": {
+    //     "plugins": [
+    //       ["import", { "libraryName": "antd-mobile-rn" }]
+    //     ]
+    //   }
+    // }
+  };
+};
